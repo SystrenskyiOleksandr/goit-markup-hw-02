@@ -1,0 +1,58 @@
+
+
+body {
+    color: #212121;
+    background-color: #F5F5F5;
+    font-family: roboto, sans-serif;
+}
+.logo {
+    color: #2196F3;
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo:hover {
+    color: #212121;}
+
+ul {list-style: none;}
+
+.nav-link {color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+
+.nav-link:hover, .nav-link:focus {color: aqua;}
+
+.title-link {color: #212121;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;}
+
+
+.link-text {
+    color: #212121;
+    }
+.text-site {color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;}  
+
+.contacts {color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
+
+.place {color:#FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
+
