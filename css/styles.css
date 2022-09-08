@@ -11,10 +11,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
+    background-color: var(--background-color);
 }
 
 .logo {
-    color: var(--accent-color)
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -22,8 +23,9 @@ body {
     letter-spacing: 0.03em;
 }
 
-.logo:hover {
-    color: var(--title-text-color);}
+.logo:hover, logo:focus {
+    color: var(--accent-color);
+}
 
 ul {list-style: none;}
 
@@ -31,7 +33,9 @@ ul {list-style: none;}
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
 
 .nav-link:hover, 
 .nav-link:focus, 
@@ -81,3 +85,11 @@ ul {list-style: none;}
 
     }
 
+/* button */
+
+.button {
+        background-color: var(--accent-color);
+        color: var(--background-color);
+    }
+
+   
