@@ -6,17 +6,18 @@
 --background-color: #FFFFFF;
 --second-background-color: #F5F4FA;
 --contact-color: rgba(255, 255, 255, 0.6);
+--color-logo: #000000;
+--background-color-hero: #2F303A;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--background-color);
-    text-decoration: none;
     }
 
 .logo {
-    color: #000000;
+    color: var(--color-logo);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -25,19 +26,27 @@ body {
     text-decoration: none;
 }
 
-.logo-blue {
-    color: var(--accent-color);
+.logo-down {
+    color: var(--background-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
-.logo:hover, logo:focus {
+.logo-blue {
     color: var(--accent-color);
 }
 
 ul {list-style: none;
 }
 
+.hero, .footer {background-color: var(--background-color-hero);
+}
+
 .title {
     color: var(--background-color);
-    background-color: #2F303A;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;    
@@ -53,15 +62,24 @@ ul {list-style: none;
     text-decoration: none;
 }
 
-.nav-link:hover {color: var(--accent-color);}
-.nav-link:focus {color: var(--accent-color);}
-
+.nav-link:hover, 
+.nav-link:focus, 
+.telephone:hover,
+.telephone:focus,
+.mail:hover,
+.mail:focus {
+    color: var(--accent-color);
+}
 
 .link {text-decoration: none;
     }
 
+.team {
+    background-color: var(--second-background-color);
+}
+
 .title-name {
-    color: #212121;
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -76,25 +94,19 @@ ul {list-style: none;
     letter-spacing: 0.03em;
 }
 
-.title-link {color: #212121;
+.title-link {color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;}
 
 .text-site {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;}  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;}  
 
-.mail {color: var(--accent-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;}
-
-    .telephone {
+.telephone, .mail {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -103,13 +115,6 @@ ul {list-style: none;
     text-decoration: none;
     }
 
-.place {color:#FFFFFF;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;}
-
     /* button */
 
 .button {
@@ -117,30 +122,42 @@ ul {list-style: none;
     background-color: var(--second-background-color);
 
 }
+.button.main {
+    color: var(--background-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    }
+
 .button.primary {
     color: var(--background-color);
-    background-color: var(--accent-color);        
-    }
+    background-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;}
 
 .button.secondary {
     color: var(--title-text-color);
-    background-color: var(--second-background-color);
-}
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    }
 
 .button.primary:hover, .button.primary:focus {
-    color: var(--title-text-color);
-cursor: pointer;
+    cursor: pointer;
 }
 
 .button.secondary:hover, .button.secondary:focus {
-    color: var(--accent-color);
-cursor: pointer;
+    cursor: pointer;
 }
 
 .place {
     color: var(--background-color);
-    background-color: #2F303A;
-    font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -149,7 +166,6 @@ cursor: pointer;
 
  .contacts {
     color: var(--contact-color);
-    background-color: #2F303A;
     font-style: normal;
     text-decoration: none;
  }
@@ -164,8 +180,18 @@ cursor: pointer;
 
  .text-photo {
     color: var(--primary-text-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
  }
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
