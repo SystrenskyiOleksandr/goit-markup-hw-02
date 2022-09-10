@@ -8,6 +8,7 @@
 --contact-color: rgba(255, 255, 255, 0.6);
 --color-logo: #000000;
 --background-color-hero: #2F303A;
+--button-main-hover: #188CE8;
 }
 
 body {
@@ -101,9 +102,8 @@ ul {list-style: none;
     letter-spacing: 0.03em;}
 
 .text-site {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: 1.71;
     letter-spacing: 0.03em;}  
 
 .telephone, .mail {
@@ -115,6 +115,9 @@ ul {list-style: none;
     text-decoration: none;
     }
 
+    .back {
+    background-color: var(--second-background-color)
+    }
     /* button */
 
 .button {
@@ -125,6 +128,7 @@ ul {list-style: none;
 .button.main {
     color: var(--background-color);
     background-color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -134,6 +138,7 @@ ul {list-style: none;
 .button.primary {
     color: var(--background-color);
     background-color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -141,14 +146,20 @@ ul {list-style: none;
 
 .button.secondary {
     color: var(--title-text-color);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     }
 
+.button.main:hover, .button.main:focus {
+    color: var(--button-main-hover);
+    cursor: pointer;
+}
 .button.primary:hover, .button.primary:focus {
     cursor: pointer;
+    color: var(--accent-color);
 }
 
 .button.secondary:hover, .button.secondary:focus {
@@ -168,7 +179,16 @@ ul {list-style: none;
     color: var(--contact-color);
     font-style: normal;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
  }
+
+.contacts:hover,
+.contacts:focus {
+    cursor: pointer;
+    color: var(--accent-color);
+}
 
  .title-photo {
     color: var(--title-text-color);
