@@ -53,6 +53,7 @@ ul {list-style: none;
     line-height: 1.36;    
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .nav-link {color: var(--title-text-color);
@@ -79,12 +80,16 @@ ul {list-style: none;
     background-color: var(--second-background-color);
 }
 
+.team-background {
+    background-color: var(--background-color);
+}
 .title-name {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    background-color: var(--background-color);
 }
 
 .name {
@@ -93,18 +98,21 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-}
+    }
 
 .title-link {color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 
 .text-site {
     font-size: 16px;
     line-height: 1.71;
-    letter-spacing: 0.03em;}  
+    letter-spacing: 0.03em;
+    }  
 
 .telephone, .mail {
     color: var(--primary-text-color);
@@ -135,15 +143,6 @@ ul {list-style: none;
     letter-spacing: 0.06em;
     }
 
-.button.primary {
-    color: var(--background-color);
-    background-color: var(--accent-color);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;}
-
 .button.secondary {
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
@@ -157,13 +156,11 @@ ul {list-style: none;
     color: var(--button-main-hover);
     cursor: pointer;
 }
-.button.primary:hover, .button.primary:focus {
-    cursor: pointer;
-    color: var(--accent-color);
-}
 
 .button.secondary:hover, .button.secondary:focus {
     cursor: pointer;
+    color: var(--background-color);
+    background-color: var(--accent-color);
 }
 
 .place {
@@ -185,7 +182,9 @@ ul {list-style: none;
  }
 
 .contacts:hover,
-.contacts:focus {
+.contacts:focus,
+.place:hover,
+.place:focus {
     cursor: pointer;
     color: var(--accent-color);
 }
