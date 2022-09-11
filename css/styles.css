@@ -17,6 +17,8 @@ body {
     background-color: var(--background-color);
     }
 
+/* header */
+
 .logo {
     color: var(--color-logo);
     font-family: 'Raleway', sans-serif;
@@ -43,6 +45,36 @@ body {
 ul {list-style: none;
 }
 
+.nav-link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.telephone:hover,
+.telephone:focus,
+.mail:hover,
+.mail:focus {
+    color: var(--accent-color);
+}
+
+.telephone,
+.mail {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+/* main */
+
 .hero, .footer {background-color: var(--background-color-hero);
 }
 
@@ -56,51 +88,8 @@ ul {list-style: none;
     text-transform: uppercase;
 }
 
-.nav-link {color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-.nav-link:hover, 
-.nav-link:focus, 
-.telephone:hover,
-.telephone:focus,
-.mail:hover,
-.mail:focus {
-    color: var(--accent-color);
-}
-
-.link {text-decoration: none;
-    }
-
-.team {
-    background-color: var(--second-background-color);
-}
-
-.team-background {
-    background-color: var(--background-color);
-}
-.title-name {
+.title-link {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    background-color: var(--background-color);
-}
-
-.name {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    }
-
-.title-link {color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -112,20 +101,40 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    }  
+}
 
-.telephone, .mail {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    }
+.title-name {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    background-color: var(--background-color);
+}
 
-    .back {
+/* our team */
+
+
+.team {
+    background-color: var(--second-background-color);
+}
+
+.back {
     background-color: var(--second-background-color)
+}
+
+.team-background {
+    background-color: var(--background-color);
+}
+
+.name {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
     }
+
     /* button */
 
 .button {
@@ -153,7 +162,6 @@ ul {list-style: none;
     }
 
 .button.main:hover, .button.main:focus {
-    color: var(--button-main-hover);
     cursor: pointer;
 }
 
@@ -162,6 +170,8 @@ ul {list-style: none;
     color: var(--background-color);
     background-color: var(--accent-color);
 }
+
+/* footer */
 
 .place {
     color: var(--background-color);
@@ -172,7 +182,7 @@ ul {list-style: none;
     text-decoration: none;
  }
 
- .contacts {
+.contacts {
     color: var(--contact-color);
     font-style: normal;
     text-decoration: none;
@@ -189,7 +199,24 @@ ul {list-style: none;
     color: var(--accent-color);
 }
 
- .title-photo {
+/* portfolio */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.title-photo {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -203,14 +230,3 @@ ul {list-style: none;
     line-height: 1.88;
     letter-spacing: 0.03em;
  }
-
- .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
-}
