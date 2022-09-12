@@ -109,18 +109,16 @@ ul {list-style: none;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    background-color: var(--background-color);
-}
+    }
 
 /* our team */
-
 
 .team {
     background-color: var(--second-background-color);
 }
 
 .back {
-    background-color: var(--second-background-color)
+    background-color: var(--background-color)
 }
 
 .team-background {
@@ -140,8 +138,9 @@ ul {list-style: none;
 .button {
     color: var(--title-text-color);
     background-color: var(--second-background-color);
-
+    border: color transparent;
 }
+
 .button.main {
     color: var(--background-color);
     background-color: var(--accent-color);
@@ -150,6 +149,7 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    border: color transparent;
     }
 
 .button.secondary {
@@ -159,10 +159,12 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+    border: color transparent;
     }
 
 .button.main:hover, .button.main:focus {
     cursor: pointer;
+    background-color: var(--button-main-hover);
 }
 
 .button.secondary:hover, .button.secondary:focus {
