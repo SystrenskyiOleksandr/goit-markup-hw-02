@@ -98,7 +98,7 @@ ul {list-style: none;
 }
 
 .text-site {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -138,7 +138,7 @@ ul {list-style: none;
 .button {
     color: var(--title-text-color);
     background-color: var(--second-background-color);
-    border: color transparent;
+    border-color: transparent;
 }
 
 .button.main {
@@ -149,7 +149,6 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    border: color transparent;
     }
 
 .button.secondary {
@@ -159,7 +158,6 @@ ul {list-style: none;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    border: color transparent;
     }
 
 .button.main:hover, .button.main:focus {
